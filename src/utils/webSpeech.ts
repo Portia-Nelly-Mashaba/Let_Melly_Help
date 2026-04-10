@@ -16,7 +16,7 @@ export function startWebSpeech(onText: (text: string) => void): WebSpeechHandle 
   recognition.interimResults = true;
   recognition.lang = 'en-ZA';
 
-  recognition.onresult = (event: SpeechRecognitionEvent) => {
+  recognition.onresult = (event: { results: SpeechRecognitionResultList }) => {
     let full = '';
     for (let i = 0; i < event.results.length; i++) {
       const piece = event.results[i]?.[0]?.transcript ?? '';

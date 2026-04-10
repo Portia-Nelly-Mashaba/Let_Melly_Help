@@ -17,7 +17,11 @@ import { parseModelJson } from '../utils/parseJson';
 const MODEL_CANDIDATES = ['gemini-2.0-flash', 'gemini-1.5-flash', 'gemini-1.5-flash-latest'];
 
 function getKey(): string | undefined {
-  const k = (import.meta.env.VITE_GEMINI_API_KEY ?? '').trim();
+  const k = (
+    import.meta.env.VITE_GEMINI_API_KEY ??
+    import.meta.env.REACT_APP_GOOGLE_API_KEY ??
+    ''
+  ).trim();
   return k || undefined;
 }
 
