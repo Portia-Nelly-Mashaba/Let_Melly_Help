@@ -1,0 +1,18 @@
+export const colors = {
+  bg: '#07060d',
+  bgElevated: 'rgba(18, 16, 28, 0.72)',
+  glassBorder: 'rgba(255, 255, 255, 0.14)',
+  glassFill: 'rgba(255, 255, 255, 0.08)',
+  text: '#f4f2ff',
+  textMuted: 'rgba(244, 242, 255, 0.62)',
+  accent: '#a855f7',
+  accentSoft: 'rgba(168, 85, 247, 0.35)',
+  warn: '#facc15',
+  warnMuted: 'rgba(250, 204, 21, 0.22)',
+  danger: '#ef4444',
+  success: '#22c55e',
+  teal: '#2dd4bf',
+  lime: '#bef264',
+  orange: '#fb923c',
+  blue: '#38bdf8',
+};

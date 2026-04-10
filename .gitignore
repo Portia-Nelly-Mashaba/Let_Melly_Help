@@ -3,11 +3,13 @@
 # dependencies
 node_modules/
 
-# Expo
+# Expo (legacy)
 .expo/
-dist/
 web-build/
 expo-env.d.ts
+
+# Vite
+dist/
 
 # Native
 .kotlin/
@@ -31,6 +33,7 @@ yarn-error.*
 *.pem
 
 # local env files
+.env
 .env*.local
 
 # typescript
